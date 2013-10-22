@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * EYEMAGINE - The leading Magento Solution Partner
+ *
+ * SimpleRedirect
+ *
+ * @author    EYEMAGINE <magento@eyemaginetech.com>
+ * @category  Eyemagine
+ * @package   Eyemagine_SimpleRedirect
+ * @copyright Copyright (c) 2013 EYEMAGINE Technology, LLC (http://www.eyemaginetech.com)
+ * @license   http://opensource.org/licenses/afl-3.0.php Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Eyemagine_SimpleRedirect>
+            <version>0.1.0</version>
+        </Eyemagine_SimpleRedirect>
+    </modules>
+    <global>
+        <models>
+            <simpleredirect>
+                <class>Eyemagine_SimpleRedirect_Model</class>
+            </simpleredirect>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_predispatch_catalog_product_view>
+                <observers>
+                    <simpleredirect>
+                        <type>model</type>
+                        <class>simpleredirect/observer</class>
+                        <method>checkForRedirect</method>
+                    </simpleredirect>
+                </observers>
+            </controller_action_predispatch_catalog_product_view>
+        </events>
+    </frontend>
+</config>

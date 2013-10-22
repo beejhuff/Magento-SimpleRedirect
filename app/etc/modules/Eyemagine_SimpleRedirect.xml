@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * EYEMAGINE - The leading Magento Solution Partner
+ *
+ * SimpleRedirect
+ *
+ * @author    EYEMAGINE <magento@eyemaginetech.com>
+ * @category  Eyemagine
+ * @package   Eyemagine_SimpleRedirect
+ * @copyright Copyright (c) 2013 EYEMAGINE Technology, LLC (http://www.eyemaginetech.com)
+ * @license   http://opensource.org/licenses/afl-3.0.php Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Eyemagine_SimpleRedirect>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Eyemagine_SimpleRedirect>
+    </modules>
+</config>
