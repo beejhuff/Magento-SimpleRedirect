@@ -35,7 +35,7 @@ Module Files:
 COMPATIBILITY:
 -------------------------------------------------------------------------------
 
-  - Tested on in Magento Enterprise Edition 1.12.0.2
+  - Tested only in Magento Enterprise Edition 1.12.0.2
   
 
 -------------------------------------------------------------------------------
